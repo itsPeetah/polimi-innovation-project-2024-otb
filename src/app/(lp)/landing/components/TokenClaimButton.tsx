@@ -11,7 +11,7 @@ export default function TokenClaimButton() {
     <form className="fixed bottom-0 | w-screen p-4" action={claimTokenClient}>
       {tokenClaimed ? (
         <Link
-          href="/bravery"
+          href="/bravery/collection"
           className="inline-block w-full | py-4 px-2 | text-center text-xl bg-zinc-300 text-black uppercase font-bold rounded-xl shadow-xl"
         >
           Browse your collection
