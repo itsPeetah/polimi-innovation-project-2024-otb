@@ -25,7 +25,7 @@ function useTitle() {
     case "/bravery/marketplace":
       return "OTB Marketplace";
     case "/bravery/collection":
-      return "My Collection";
+      return "Collection";
     default:
       return "Welcome home";
   }

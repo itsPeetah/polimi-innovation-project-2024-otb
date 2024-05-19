@@ -5,7 +5,6 @@ type Product = {
   image: string;
   description: string;
   passport: DPPassport;
-  level: Level;
 };
 
 type DPPassport = {

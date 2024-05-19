@@ -5,6 +5,7 @@ import ProductPassport from "./components/ProductPassport";
 import TokenClaimButton from "./components/TokenClaimButton";
 import ProductHeader from "./components/ProductHeader";
 import ProductTokenInfo from "./components/ProductTokenInfo";
+import User from "@/lib/user";
 
 const P: Product = {
   name: "Product Name",
@@ -14,7 +15,15 @@ const P: Product = {
   passport: {
     id: "eaedb5c9b418bd6eff0894d572f3011a",
   },
-  level: "intrepid",
+};
+
+const U: User = {
+  name: "",
+  level: "dauntless",
+  levelPercentage: 0,
+  profilePicture: "",
+  totalPoints: 0,
+  email: "",
 };
 
 export default function Page() {
@@ -23,7 +32,7 @@ export default function Page() {
       <main className="w-full pb-20">
         <ProductView product={P} />
         <ProductHeader product={P} />
-        <ProductTokenInfo product={P} />
+        <ProductTokenInfo product={P} user={U} />
         <ProductPassport product={P} />
       </main>
       <TokenClaimButton />
