@@ -6,6 +6,7 @@ type User = {
   levelPercentage: number;
   profilePicture: string;
   totalPoints: number;
+  email: string;
 };
 
 export default User;

@@ -12,6 +12,7 @@ const U: User = {
   levelPercentage: 0.6,
   profilePicture: "/doesnt-exist.jpg",
   totalPoints: 320,
+  email: "user.name@example.com",
 };
 
 export default function page() {
