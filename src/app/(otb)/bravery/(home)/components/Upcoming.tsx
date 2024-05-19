@@ -13,10 +13,10 @@ export default function Upcoming({ user }: Props) {
         Upcoming
       </h2>
       <div className="w-full flex flex-col gap-4 px-4">
-        <UpcomingRow title="News 1" subtitle="dd/mm/yyyy" />
-        <UpcomingRow title="News 1" subtitle="dd/mm/yyyy" />
-        <UpcomingRow title="News 1" subtitle="dd/mm/yyyy" />
-        <UpcomingRow title="News 1" subtitle="dd/mm/yyyy" />
+        <UpcomingRow title="Task name" subtitle="dd/mm/yyyy" />
+        <UpcomingRow title="Exclusive event" subtitle="dd/mm/yyyy" />
+        <UpcomingRow title="New drop" subtitle="dd/mm/yyyy" />
+        <UpcomingRow title="Co creation initiative" subtitle="dd/mm/yyyy" />
       </div>
     </div>
   );
