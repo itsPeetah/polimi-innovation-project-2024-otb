@@ -1,3 +1,5 @@
+import Level from "../level";
+
 type Product = {
   name: string;
   image: string;
@@ -9,7 +11,5 @@ type Product = {
 type DPPassport = {
   id: string;
 };
-
-export type Level = "bold" | "fearless" | "dauntless" | "intrepid";
 
 export default Product;

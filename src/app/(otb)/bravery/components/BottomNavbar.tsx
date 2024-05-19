@@ -26,7 +26,7 @@ export default function BottomNavbar() {
         </Link>
         <Link
           href="/bravery"
-          className="p-2 bg-zinc-200 rounded-full shadow-lg"
+          className="p-3 bg-zinc-200 rounded-full shadow-lg"
         >
           <HomeIcon className="w-10 h-10" />
         </Link>

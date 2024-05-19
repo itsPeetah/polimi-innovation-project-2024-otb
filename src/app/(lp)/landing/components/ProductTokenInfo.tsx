@@ -1,15 +1,12 @@
+import LevelBadge from "@/app/components/common/LevelBadge";
+import getLevelColor from "@/lib/level/getLevelColor";
 import Product from "@/lib/product";
-import getLevelColor from "@/lib/product/getLevelColor";
-import Link from "next/link";
 
 interface Props {
   product: Product;
 }
 
 export default function ProductTokenInfo({ product }: Props) {
-  const braveryBgColor = getLevelColor(product.level, "bg");
-  const braveryTextColor = getLevelColor(product.level, "text");
-
   return (
     <div
       id="passport-info"
@@ -23,11 +20,7 @@ export default function ProductTokenInfo({ product }: Props) {
           <h3 className="font-semibold text-xs uppercase text-zinc-600">
             Bravery
           </h3>
-          <div
-            className={`${braveryBgColor} ${braveryTextColor} font-bold uppercase text-sm text-center rounded-full p-1 shadow-md`}
-          >
-            {product.level}
-          </div>
+          <LevelBadge level={product.level} />
         </div>
         <div className="w-full col-span-3 p-2 | bg-zinc-200 rounded-lg">
           <h3 className="font-semibold text-xs uppercase text-zinc-600">

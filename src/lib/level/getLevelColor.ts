@@ -1,4 +1,4 @@
-import { Level } from ".";
+import Level from ".";
 
 export default function getLevelColor(level: Level, color: "bg" | "text") {
   let className = "";
