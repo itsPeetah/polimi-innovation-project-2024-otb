@@ -13,13 +13,13 @@ export const amiri: Brand = {
 };
 
 export const margiela: Brand = {
-  name: "",
-  url: "",
-  logo: "",
+  name: "Maison Margiela",
+  url: "https://maisonmargiela.com",
+  logo: "/images/brand/margiela.png",
 };
 
 export const marni: Brand = {
-  name: "",
-  url: "",
-  logo: "",
+  name: "Marni",
+  url: "https://marni.com",
+  logo: "/images/brand/marni.png",
 };
