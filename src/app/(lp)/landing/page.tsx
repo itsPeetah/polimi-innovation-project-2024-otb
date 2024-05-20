@@ -1,5 +1,5 @@
-import { mock_product_0 } from "@/app/data/products";
-import { mock_user_0 } from "@/app/data/users";
+import { mock_product_0 } from "@/data/products";
+import { mock_user_0 } from "@/data/users";
 import ProductHeader from "./components/ProductHeader";
 import ProductPassport from "./components/ProductPassport";
 import ProductTokenInfo from "./components/ProductTokenInfo";

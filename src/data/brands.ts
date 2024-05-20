@@ -1,15 +1,15 @@
 import Brand from "@/lib/brand";
 
 export const diesel: Brand = {
-  name: "",
-  url: "",
-  logo: "",
+  name: "Diesel",
+  url: "https://diesel.com",
+  logo: "/images/brand/diesel.jpeg",
 };
 
 export const amiri: Brand = {
-  name: "",
-  url: "",
-  logo: "",
+  name: "Amiri",
+  url: "https://amiri.com",
+  logo: "/images/brand/amiri.com",
 };
 
 export const margiela: Brand = {

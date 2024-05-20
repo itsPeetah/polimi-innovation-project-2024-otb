@@ -2,7 +2,7 @@ import {
   mock_product_0,
   mock_product_1,
   mock_product_2,
-} from "@/app/data/products";
+} from "@/data/products";
 import ProductGrid from "./components/ProductGrid";
 
 export default function Page() {

@@ -1,6 +1,6 @@
 import React from "react";
 import Tasks from "../(home)/components/Tasks";
-import { mock_user_0, mock_users_leaderboard } from "@/app/data/users";
+import { mock_user_0, mock_users_leaderboard } from "@/data/users";
 import Header from "./components/Header";
 import Leaderboard from "./components/Leaderboard";
 import getLevelColor from "@/lib/level/getLevelColor";

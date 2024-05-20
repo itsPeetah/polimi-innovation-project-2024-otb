@@ -1,4 +1,4 @@
-import { mock_user_0 } from "@/app/data/users";
+import { mock_user_0 } from "@/data/users";
 import Header from "./components/Header";
 import News from "./components/News";
 import Promotions from "./components/Promotions";

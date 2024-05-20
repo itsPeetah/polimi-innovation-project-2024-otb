@@ -1,4 +1,4 @@
-import { mock_promos } from "@/app/data/copy";
+import { mock_promos } from "@/data/copy";
 import User from "@/lib/user";
 import React, { ReactNode } from "react";
 

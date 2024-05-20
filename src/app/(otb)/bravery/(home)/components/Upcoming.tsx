@@ -1,4 +1,4 @@
-import { mock_upcoming } from "@/app/data/copy";
+import { mock_upcoming } from "@/data/copy";
 import User from "@/lib/user";
 import Image from "next/image";
 import React from "react";

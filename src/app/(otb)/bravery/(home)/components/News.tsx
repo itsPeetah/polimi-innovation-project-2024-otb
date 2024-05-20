@@ -1,4 +1,4 @@
-import { mock_news } from "@/app/data/news";
+import { mock_news } from "@/data/news";
 import User from "@/lib/user";
 import Image from "next/image";
 import React from "react";

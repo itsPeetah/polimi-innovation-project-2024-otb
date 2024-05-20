@@ -1,4 +1,4 @@
-import { mock_user_0 } from "@/app/data/users";
+import { mock_user_0 } from "@/data/users";
 import ProfileDetails from "./components/ProfileDetails";
 import ProfileLevel from "./components/ProfileLevel";
 import ProfilePicture from "./components/ProfilePicture";
