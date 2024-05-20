@@ -2,7 +2,7 @@ import User from "@/lib/user";
 
 export const mock_user_0: User = {
   name: "User name",
-  level: "dauntless",
+  level: "intrepid",
   levelPercentage: 0.64,
   profilePicture: "/doesntexist.png",
   totalPoints: 640,

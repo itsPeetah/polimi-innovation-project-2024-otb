@@ -1,3 +1,4 @@
+import { mock_promos } from "@/app/data/task";
 import User from "@/lib/user";
 import React, { ReactNode } from "react";
 
@@ -13,8 +14,15 @@ export default function Promotions({ user }: Props) {
         Your promotions
       </h2>
       <div className="w-full flex flex-row gap-4 px-4 pb-4">
-        <PromotionButton title="Promotion #1" subtitle="Promotion snippet" />
-        <PromotionButton title="Promotion #2" subtitle="Promotion snippet" />
+        {mock_promos.map((p) => {
+          return (
+            <PromotionButton
+              key={`hp_promo_${p.title}`}
+              title={p.title}
+              subtitle={p.subtitle}
+            />
+          );
+        })}
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import ProfileDetails from "./components/ProfileDetails";
 import ProfileLevel from "./components/ProfileLevel";
 import ProfilePicture from "./components/ProfilePicture";
 import ProfileWallet from "./components/ProfileWallet";
+import LearnMore from "./components/LearnMore";
 
 export default function Page() {
   return (
@@ -13,6 +14,7 @@ export default function Page() {
       </div>
       <ProfileLevel user={mock_user_0} />
       <ProfileWallet user={mock_user_0} />
+      <LearnMore />
     </div>
   );
 }

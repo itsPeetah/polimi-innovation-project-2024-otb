@@ -28,8 +28,8 @@ const config: Config = {
           text: "#3b3a37",
         },
         intrepid: {
-          bg: "#e8d5ed",
-          text: "#1b161c",
+          bg: "#b9f2ff",
+          text: "#2e3638",
         },
       },
     },

@@ -1,3 +1,4 @@
+import { mock_news } from "@/app/data/news";
 import User from "@/lib/user";
 import Image from "next/image";
 import React from "react";
@@ -12,10 +13,14 @@ export default function News({ user }: Props) {
       <h2 className="font-bold uppercase text-sm mx-4 text-zinc-500">
         Your {user.level} news
       </h2>
-      <div className="w-full flex flex-row gap-4 px-4 | overflow-auto">
-        {[1, 2, 3, 4].map((v) => {
+      <div className="w-full flex flex-row gap-4 px-4 py-4 | overflow-auto">
+        {mock_news.map((n) => {
           return (
-            <NewsCard key={`newscard ${v}`} text={`News #` + v} imgSrc="/" />
+            <NewsCard
+              key={`newscard ${n.title}`}
+              text={n.title}
+              imgSrc={n.thumbnail}
+            />
           );
         })}
       </div>
@@ -25,7 +30,7 @@ export default function News({ user }: Props) {
 
 function NewsCard(props: { text: string; imgSrc: string }) {
   return (
-    <div className="flex-shrink-0 shadow-lg">
+    <div className="flex-shrink-0 rounded-xl shadow-md">
       <Image
         src={props.imgSrc}
         alt={props.text}

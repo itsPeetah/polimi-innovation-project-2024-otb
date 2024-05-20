@@ -1,5 +1,6 @@
 "use client";
 
+import { mock_tasks } from "@/app/data/task";
 import User from "@/lib/user";
 
 interface Props {
@@ -14,10 +15,15 @@ export default function Tasks({ user, title }: Props) {
         {title}
       </h2>
       <div className="w-full grid grid-cols-2 gap-4 px-4">
-        <TaskButton title="Task #1" subtitle="Task snippet" />
-        <TaskButton title="Task #2" subtitle="Task snippet" />
-        <TaskButton title="Task #3" subtitle="Task snippet" />
-        <TaskButton title="Task #4" subtitle="Task snippet" />
+        {mock_tasks.map((t) => {
+          return (
+            <TaskButton
+              key={`hp_task_${t.title}`}
+              title={t.title}
+              subtitle={t.subtitle}
+            />
+          );
+        })}
       </div>
       <button
         onClick={() => {
