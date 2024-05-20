@@ -4,13 +4,13 @@
 
 @layer base {
   html {
-    width: screen;
+    width: 100vw;
+    min-height: 100vh;
+    @apply bg-gradient-to-b from-zinc-50 to-zinc-100;
   }
 
   body {
-    width: 100vw;
-    min-height: 100dvh;
-    @apply bg-gradient-to-b from-zinc-100 to-zinc-50;
+    @apply max-w-[450px] mx-auto shadow-2xl;
   }
 }
 

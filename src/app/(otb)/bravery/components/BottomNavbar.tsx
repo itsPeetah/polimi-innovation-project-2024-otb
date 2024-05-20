@@ -10,8 +10,8 @@ import React from "react";
 
 export default function BottomNavbar() {
   return (
-    <div className=" | w-full | flex-shrink-0">
-      <div className="w-full | flex flex-row gap-4 items-center justify-around  p-4 | bg-zinc-100 bg-opacity-50">
+    <div className="fixed bottom-0  z-50 | w-full max-w-[450px] | flex-shrink-0">
+      <div className="w-full | flex flex-row gap-4 items-center justify-around  p-4 | bg-zinc-50">
         <Link
           href="/bravery/me"
           className="p-2 bg-zinc-200 rounded-xl shadow-lg"

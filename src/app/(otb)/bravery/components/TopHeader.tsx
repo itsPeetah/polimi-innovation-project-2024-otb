@@ -6,8 +6,8 @@ import React from "react";
 export default function TopHeader() {
   const title = useTitle();
   return (
-    <div className=" w-full | flex-shrink-0">
-      <div className="w-full | flex flex-row gap-4 items-center justify-around p-4 | bg-zinc-100 bg-opacity-50 shadow-md">
+    <div className="sticky top-0 z-50 | w-full | flex-shrink-0">
+      <div className="w-full | flex flex-row gap-4 items-center justify-around p-4 | bg-zinc-50 shadow-md">
         <h1 className="lowercase font-bold text-xl">{title}</h1>
       </div>
     </div>

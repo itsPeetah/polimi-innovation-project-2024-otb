@@ -12,12 +12,15 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex flex-col h-screen">
+    <>
       <TopHeader />
       <div className="flex-grow overflow-hidden">
-        <div className="h-full w-full overflow-y-auto">{children}</div>
+        <div className="h-full w-full overflow-y-auto">
+          {children}
+          <div className="h-[100px]" />
+        </div>
       </div>
       <BottomNavbar />
-    </div>
+    </>
   );
 }
