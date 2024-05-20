@@ -1,23 +1,34 @@
+"use client";
+
 import User from "@/lib/user";
-import React, { ReactNode } from "react";
 
 interface Props {
   user: User;
+  title: string;
 }
 
-export default function Tasks({ user }: Props) {
+export default function Tasks({ user, title }: Props) {
   return (
     <div className="w-full flex flex-col gap-4 my-4 overflow-hidden">
       <h2 className="font-bold uppercase text-sm mx-4 text-zinc-500">
-        {" "}
-        Gain points in tasks
+        {title}
       </h2>
-      <div className="w-full grid grid-cols-2 gap-4 px-4 pb-4">
+      <div className="w-full grid grid-cols-2 gap-4 px-4">
         <TaskButton title="Task #1" subtitle="Task snippet" />
         <TaskButton title="Task #2" subtitle="Task snippet" />
         <TaskButton title="Task #3" subtitle="Task snippet" />
         <TaskButton title="Task #4" subtitle="Task snippet" />
       </div>
+      <button
+        onClick={() => {
+          alert(
+            "Clicking here would take you to a page with all of the point gaining tasks available to you"
+          );
+        }}
+        className="text-xs text-zinc-500"
+      >
+        see all tasks...
+      </button>
     </div>
   );
 }

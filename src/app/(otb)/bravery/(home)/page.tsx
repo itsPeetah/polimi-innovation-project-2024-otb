@@ -11,7 +11,7 @@ export default function page() {
       <Header user={mock_user_0} />
       <News user={mock_user_0} />
       <Promotions user={mock_user_0} />
-      <Tasks user={mock_user_0} />
+      <Tasks title="Gain points in tasks" user={mock_user_0} />
       <Upcoming user={mock_user_0} />
     </main>
   );
