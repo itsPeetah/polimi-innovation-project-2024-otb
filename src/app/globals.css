@@ -9,7 +9,7 @@
 
   body {
     width: 100vw;
-    min-height: 100dvh;
+    min-height: 100svh;
     @apply bg-gradient-to-b from-zinc-100 to-zinc-50;
   }
 }
