@@ -1,3 +1,4 @@
+import { mock_upcoming } from "@/app/data/copy";
 import User from "@/lib/user";
 import Image from "next/image";
 import React from "react";
@@ -13,10 +14,15 @@ export default function Upcoming({ user }: Props) {
         Upcoming
       </h2>
       <div className="w-full flex flex-col gap-4 px-4">
-        <UpcomingRow title="Task name" subtitle="dd/mm/yyyy" />
-        <UpcomingRow title="Exclusive event" subtitle="dd/mm/yyyy" />
-        <UpcomingRow title="New drop" subtitle="dd/mm/yyyy" />
-        <UpcomingRow title="Co creation initiative" subtitle="dd/mm/yyyy" />
+        {mock_upcoming.map((uc) => {
+          return (
+            <UpcomingRow
+              key={`hp_up_${uc.title}`}
+              title={uc.title}
+              subtitle={uc.subtitle}
+            />
+          );
+        })}
       </div>
     </div>
   );

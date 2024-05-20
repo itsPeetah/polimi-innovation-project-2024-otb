@@ -1,6 +1,6 @@
 "use client";
 
-import { mock_tasks } from "@/app/data/task";
+import { mock_tasks } from "@/app/data/copy";
 import User from "@/lib/user";
 
 interface Props {

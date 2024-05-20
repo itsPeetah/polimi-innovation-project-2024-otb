@@ -1,5 +1,3 @@
-import Level from "../level";
-
 type Product = {
   name: string;
   image: string;

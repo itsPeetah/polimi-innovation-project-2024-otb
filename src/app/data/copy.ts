@@ -29,3 +29,22 @@ export const mock_promos: Task[] = [
     subtitle: "Shop Diesel for a discount",
   },
 ];
+
+export const mock_upcoming: Task[] = [
+  {
+    title: "Amiri anniversary!",
+    subtitle: "Celebrate with us",
+  },
+  {
+    title: "Diesel music festival",
+    subtitle: "Happening next weekend",
+  },
+  {
+    title: "New limited drop coming ",
+    subtitle: "Coming next month",
+  },
+  {
+    title: "Renzo Rosso: my story",
+    subtitle: "The documentary is landing on netflix",
+  },
+];
