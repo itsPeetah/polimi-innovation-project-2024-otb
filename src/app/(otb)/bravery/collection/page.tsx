@@ -1,33 +1,9 @@
-import Product from "@/lib/product";
-import React from "react";
+import {
+  mock_product_0,
+  mock_product_1,
+  mock_product_2,
+} from "@/app/data/products";
 import ProductGrid from "./components/ProductGrid";
-
-const P1: Product = {
-  name: "Product 1",
-  image: "/doesntexist.png",
-  description: "",
-  passport: {
-    id: "",
-  },
-};
-
-const P2: Product = {
-  name: "Product 2",
-  image: "/doesntexist.png",
-  description: "",
-  passport: {
-    id: "",
-  },
-};
-
-const P3: Product = {
-  name: "Product 3",
-  image: "/doesntexist.png",
-  description: "",
-  passport: {
-    id: "",
-  },
-};
 
 export default function Page() {
   return (
@@ -37,7 +13,9 @@ export default function Page() {
           Your OTB collection
         </h2>
       </div>
-      <ProductGrid products={[P1, P2, P3]} />
+      <ProductGrid
+        products={[mock_product_0, mock_product_1, mock_product_2]}
+      />
     </div>
   );
 }

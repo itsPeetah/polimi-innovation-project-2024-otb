@@ -1,28 +1,18 @@
-import User from "@/lib/user";
-import React from "react";
-import ProfilePicture from "./components/ProfilePicture";
+import { mock_user_0 } from "@/app/data/users";
 import ProfileDetails from "./components/ProfileDetails";
 import ProfileLevel from "./components/ProfileLevel";
+import ProfilePicture from "./components/ProfilePicture";
 import ProfileWallet from "./components/ProfileWallet";
-
-const U: User = {
-  name: "User Name",
-  level: "dauntless",
-  levelPercentage: 0.6,
-  profilePicture: "/doesnt-exist.jpg",
-  totalPoints: 320,
-  email: "user.name@example.com",
-};
 
 export default function Page() {
   return (
     <div>
       <div className="flex flex-row items-center justify-center">
-        <ProfilePicture user={U} />
-        <ProfileDetails user={U} />
+        <ProfilePicture user={mock_user_0} />
+        <ProfileDetails user={mock_user_0} />
       </div>
-      <ProfileLevel user={U} />
-      <ProfileWallet user={U} />
+      <ProfileLevel user={mock_user_0} />
+      <ProfileWallet user={mock_user_0} />
     </div>
   );
 }

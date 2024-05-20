@@ -1,28 +1,18 @@
-import React from "react";
+import { mock_user_0 } from "@/app/data/users";
 import Header from "./components/Header";
-import User from "@/lib/user";
 import News from "./components/News";
 import Promotions from "./components/Promotions";
-import Upcoming from "./components/Upcoming";
 import Tasks from "./components/Tasks";
-
-const U: User = {
-  name: "User Name",
-  level: "dauntless",
-  levelPercentage: 0.6,
-  profilePicture: "/doesnt-exist.jpg",
-  totalPoints: 320,
-  email: "user.name@example.com",
-};
+import Upcoming from "./components/Upcoming";
 
 export default function page() {
   return (
     <main className="w-full">
-      <Header user={U} />
-      <News user={U} />
-      <Promotions user={U} />
-      <Tasks user={U} />
-      <Upcoming user={U} />
+      <Header user={mock_user_0} />
+      <News user={mock_user_0} />
+      <Promotions user={mock_user_0} />
+      <Tasks user={mock_user_0} />
+      <Upcoming user={mock_user_0} />
     </main>
   );
 }
