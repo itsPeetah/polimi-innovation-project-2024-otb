@@ -8,7 +8,7 @@ interface Props {
 
 export default function ProfileDetails({ user }: Props) {
   return (
-    <div className="flex flex-col gap-2 p-4">
+    <div className="flex flex-col gap-2 p-4 px-8">
       <h3 className="font-bold uppercase text-xs text-zinc-500">
         name
         <PencilSquareIcon className="ml-2 inline w-5 h-5 -translate-y-[0.5px]" />

@@ -1,5 +1,4 @@
 "use client";
-import claimToken from "@/app/actions/claimToken";
 import { ArrowDownOnSquareStackIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -8,7 +7,10 @@ export default function TokenClaimButton() {
   const { tokenClaimed, claimTokenClient } = useClaimToken();
 
   return (
-    <form className="fixed bottom-0 | w-screen p-4" action={claimTokenClient}>
+    <form
+      className="sticky bottom-0 w-full | flex flex-row | p-4"
+      action={claimTokenClient}
+    >
       {tokenClaimed ? (
         <Link
           href="/bravery/collection"
@@ -35,8 +37,7 @@ export default function TokenClaimButton() {
 function useClaimToken() {
   const [tokenClaimed, setTokenClaimed] = useState(false);
   async function claimTokenClient(data: FormData) {
-    const result = await claimToken();
-    setTokenClaimed(() => result);
+    setTokenClaimed(() => true);
   }
   return { tokenClaimed, claimTokenClient };
 }
