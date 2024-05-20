@@ -7,10 +7,7 @@ export default function TokenClaimButton() {
   const { tokenClaimed, claimTokenClient } = useClaimToken();
 
   return (
-    <form
-      className="sticky bottom-0 w-full | flex flex-row | p-4"
-      action={claimTokenClient}
-    >
+    <div className="sticky bottom-0 w-full | flex flex-row | p-4">
       {tokenClaimed ? (
         <Link
           href="/bravery/collection"
@@ -20,7 +17,8 @@ export default function TokenClaimButton() {
         </Link>
       ) : (
         <button
-          type="submit"
+          type="button"
+          onClick={claimTokenClient}
           className="inline-block w-full | py-4 px-2 | text-center text-xl bg-black text-white uppercase font-bold rounded-xl shadow-xl"
         >
           <ArrowDownOnSquareStackIcon
@@ -30,13 +28,13 @@ export default function TokenClaimButton() {
           Claim Passport
         </button>
       )}
-    </form>
+    </div>
   );
 }
 
 function useClaimToken() {
   const [tokenClaimed, setTokenClaimed] = useState(false);
-  async function claimTokenClient(data: FormData) {
+  async function claimTokenClient() {
     setTokenClaimed(() => true);
   }
   return { tokenClaimed, claimTokenClient };
