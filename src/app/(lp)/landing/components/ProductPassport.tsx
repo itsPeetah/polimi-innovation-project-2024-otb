@@ -70,7 +70,10 @@ function ProductPassportLink(props: {
           {props.subtitle}
         </span>
       </Link>
-      <ChevronRightIcon className="w-6 h-6 flex-shrink-0" strokeWidth={2} />
+      <ChevronRightIcon
+        className="w-6 h-6 flex-shrink-0 mr-0 ml-auto"
+        strokeWidth={2}
+      />
     </li>
   );
 }
