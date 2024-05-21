@@ -6,7 +6,7 @@ import SecondHandMarket from "./components/SecondHand";
 
 export default function Page() {
   return (
-    <div>
+    <div className="">
       <Header />
       <FavoriteBrands user={mock_user_0} />
       <SecondHandMarket user={mock_user_0} />

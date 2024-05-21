@@ -1,6 +1,7 @@
 import { amiri, diesel, margiela, marni } from "@/data/brands";
 import Brand from "@/lib/brand";
 import User from "@/lib/user";
+import getImageSrc from "@/lib/utils/getImageSrc";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -40,7 +41,7 @@ export function BrandLink(props: { brand: Brand }) {
   return (
     <Link href={props.brand.url}>
       <Image
-        src={props.brand.logo}
+        src={getImageSrc(props.brand.logo)}
         alt={props.brand.name}
         width={60}
         height={60}

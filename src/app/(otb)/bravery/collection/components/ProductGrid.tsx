@@ -1,5 +1,6 @@
 import Product from "@/lib/product";
 import getShortDescription from "@/lib/product/getShortDescription";
+import getImageSrc from "@/lib/utils/getImageSrc";
 import { PlusCircleIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import React from "react";
@@ -26,7 +27,7 @@ function ProductCell(props: { product: Product }) {
   return (
     <div className="shadow-lg">
       <Image
-        src={props.product.image}
+        src={getImageSrc(props.product.image)}
         alt={props.product.name}
         width={200}
         height={200}
@@ -34,7 +35,7 @@ function ProductCell(props: { product: Product }) {
       />
       <div className="w-full p-2 rounded-b-lg bg-zinc-100">
         <h3 className="font-bold">{props.product.name}</h3>
-        <p className="text-xs">product description snippet</p>
+        <p className="text-xs">{props.product.brand.name}</p>
       </div>
     </div>
   );
