@@ -50,7 +50,7 @@ export default function SecondHandMarket({ user }: Props) {
       <div className="w-full | grid grid-cols-2 my-4 | text-sm font-bold">
         <button
           className={`uppercase border-4 border-r-0 border-zinc-300 py-1 ${
-            vipStore ? "bg-zinc-100" : "bg-zinc-300"
+            vipStore ? "bg-zinc-300" : "bg-zinc-100"
           } rounded-l-lg`}
           onClick={() => setVipStore(false)}
         >
@@ -58,7 +58,7 @@ export default function SecondHandMarket({ user }: Props) {
         </button>
         <button
           className={`uppercase border-4 border-l-0 border-zinc-300 py-1 ${
-            vipStore ? "bg-zinc-300" : "bg-zinc-100"
+            vipStore ? "bg-zinc-100" : "bg-zinc-300"
           } rounded-r-lg`}
           onClick={() => setVipStore(true)}
         >
