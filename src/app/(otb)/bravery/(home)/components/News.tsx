@@ -34,7 +34,7 @@ function NewsCard(props: { text: string; imgSrc: string }) {
       <Image
         src={props.imgSrc}
         alt={props.text}
-        className="w-[200px] h-[100px] bg-zinc-200 rounded-t-xl"
+        className="w-[200px] h-[100px] bg-zinc-200 rounded-t-xl object-cover"
         width={200}
         height={100}
       />

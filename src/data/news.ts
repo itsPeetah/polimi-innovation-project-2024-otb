@@ -3,18 +3,18 @@ import News from "@/lib/copy/news";
 export const mock_news: News[] = [
   {
     title: "New Margiela Show in your city",
-    thumbnail: "/",
+    thumbnail: "/images/news/news1.jpg",
   },
   {
-    title: "New stores opening today",
-    thumbnail: "/",
+    title: "Pop up stores make an entrance!",
+    thumbnail: "/images/news/news2.jpg",
   },
   {
     title: "Check the new Amiri bag in 3D!",
-    thumbnail: "/",
+    thumbnail: "/images/news/news3.jpg",
   },
   {
     title: "OTB Group enters the future!",
-    thumbnail: "/",
+    thumbnail: "/images/news/news4.jpg",
   },
 ];

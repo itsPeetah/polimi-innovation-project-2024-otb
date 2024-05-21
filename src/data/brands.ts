@@ -9,7 +9,7 @@ export const diesel: Brand = {
 export const amiri: Brand = {
   name: "Amiri",
   url: "https://amiri.com",
-  logo: "/images/brand/amiri.com",
+  logo: "/images/brand/amiri.png",
 };
 
 export const margiela: Brand = {

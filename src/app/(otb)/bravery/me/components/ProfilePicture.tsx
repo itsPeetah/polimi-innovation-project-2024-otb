@@ -21,7 +21,7 @@ export default function ProfilePicture({ user }: Props) {
         <div className="absolute top-0 w-full h-full | flex flex-col items-center justify-center | bg-black bg-opacity-20 text-white rounded-full">
           <button className="text-xs">
             <PencilSquareIcon className="mx-auto w-8 h-8" strokeWidth={1.5} />
-            Edit profile picture
+            Edit avatar
           </button>
         </div>
       </div>
