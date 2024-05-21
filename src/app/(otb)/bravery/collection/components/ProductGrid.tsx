@@ -25,7 +25,7 @@ export default function ProductGrid({ products }: Props) {
 
 function ProductCell(props: { product: Product }) {
   return (
-    <div className="shadow-lg">
+    <div className="shadow-lg rounded-lg">
       <Image
         src={getImageSrc(props.product.image)}
         alt={props.product.name}
@@ -34,7 +34,7 @@ function ProductCell(props: { product: Product }) {
         className="w-full aspect-square object-cover bg-black bg-opacity-10 rounded-t-lg"
       />
       <div className="w-full p-2 rounded-b-lg bg-zinc-100">
-        <h3 className="font-bold">{props.product.name}</h3>
+        <h3 className="font-bold text-xs sm:text-sm">{props.product.name}</h3>
         <p className="text-xs">{props.product.brand.name}</p>
       </div>
     </div>

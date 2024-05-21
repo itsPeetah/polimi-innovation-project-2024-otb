@@ -11,7 +11,7 @@ interface Props {
 
 export default function ProductGrid({ products }: Props) {
   return (
-    <div className="p-4 gap-4 grid grid-cols-2">
+    <div className="py-4 gap-4 grid grid-cols-2">
       {products.map((p) => {
         return <ProductCell product={p} key={`productcell__${p.name}`} />;
       })}
@@ -27,7 +27,7 @@ function ProductCell(props: { product: Product }) {
   const isNft = props.product.type === "nft";
 
   return (
-    <div className="shadow-lg">
+    <div className="shadow-lg rounded-lg">
       <div className="relative w-full aspect-square">
         <Image
           src={getImageSrc(props.product.image)}
@@ -43,7 +43,7 @@ function ProductCell(props: { product: Product }) {
         )}
       </div>
       <div className="w-full p-2 rounded-b-lg bg-zinc-100">
-        <h3 className="font-bold">{props.product.name}</h3>
+        <h3 className="font-bold text-xs sm:text-sm">{props.product.name}</h3>
         <p className="text-xs">{props.product.brand.name}</p>
       </div>
     </div>
