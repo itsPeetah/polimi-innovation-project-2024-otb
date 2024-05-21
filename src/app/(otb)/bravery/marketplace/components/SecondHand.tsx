@@ -1,8 +1,24 @@
 "use client";
 
+import {
+  mock_product_2,
+  mock_product_3,
+  mock_product_4,
+  mock_product_5,
+  mock_product_6,
+  mock_product_7,
+} from "@/data/products";
+import Product from "@/lib/product";
 import User from "@/lib/user";
-import React, { useState } from "react";
+import { useState } from "react";
+import ProductGrid from "./ProductGrid";
 
+const productsSecondHand: Product[] = [
+  mock_product_2,
+  mock_product_6,
+  mock_product_4,
+];
+const productsVIP: Product[] = [mock_product_3, mock_product_5, mock_product_7];
 interface Props {
   user: User;
 }
@@ -12,16 +28,16 @@ export default function SecondHandMarket({ user }: Props) {
 
   function buildSecondHandBody() {
     return (
-      <div className="w-full h-[600px] p-6 border border-black">
-        second hand listings by users
+      <div className="w-full">
+        <ProductGrid products={productsSecondHand} />
       </div>
     );
   }
 
   function buildVipBody() {
     return (
-      <div className="w-full h-[600px] p-6 border border-black">
-        VIP listings by OTB
+      <div className="w-full">
+        <ProductGrid products={productsVIP} />
       </div>
     );
   }

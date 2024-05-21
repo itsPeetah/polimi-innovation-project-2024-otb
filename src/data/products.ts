@@ -1,5 +1,5 @@
 import Product from "@/lib/product";
-import { amiri, diesel, marni } from "./brands";
+import { amiri, diesel, margiela, marni } from "./brands";
 
 export const mock_product_0: Product = {
   name: "Product Name",
@@ -75,8 +75,8 @@ export const mock_product_6: Product = {
   passport: {
     id: "",
   },
-  brand: marni,
-  type: "real",
+  brand: margiela,
+  type: "nft",
 };
 
 export const mock_product_7: Product = {
@@ -86,6 +86,6 @@ export const mock_product_7: Product = {
   passport: {
     id: "",
   },
-  brand: marni,
-  type: "real",
+  brand: amiri,
+  type: "nft",
 };
