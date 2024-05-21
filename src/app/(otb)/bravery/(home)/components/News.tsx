@@ -1,5 +1,6 @@
 import { mock_news } from "@/data/news";
 import User from "@/lib/user";
+import getImageSrc from "@/lib/utils/getImageSrc";
 import Image from "next/image";
 import React from "react";
 
@@ -32,7 +33,7 @@ function NewsCard(props: { text: string; imgSrc: string }) {
   return (
     <div className="flex-shrink-0 rounded-xl shadow-md">
       <Image
-        src={props.imgSrc}
+        src={getImageSrc(props.imgSrc)}
         alt={props.text}
         className="w-[200px] h-[100px] bg-zinc-200 rounded-t-xl object-cover"
         width={200}

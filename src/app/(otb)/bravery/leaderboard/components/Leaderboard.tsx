@@ -1,4 +1,5 @@
 import User from "@/lib/user";
+import getImageSrc from "@/lib/utils/getImageSrc";
 import Image from "next/image";
 import React from "react";
 
@@ -44,7 +45,7 @@ function LeaderboardRow({
       className={`w-full | flex flex-row px-4 py-2 items-center gap-4 | rounded-lg bg-zinc-200`}
     >
       <Image
-        src={user.profilePicture}
+        src={getImageSrc(user.profilePicture)}
         alt={user.name}
         width={50}
         height={50}

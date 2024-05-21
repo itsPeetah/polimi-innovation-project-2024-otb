@@ -1,4 +1,5 @@
 import User from "@/lib/user";
+import getImageSrc from "@/lib/utils/getImageSrc";
 import { PencilSquareIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import React from "react";
@@ -12,7 +13,7 @@ export default function ProfilePicture({ user }: Props) {
     <div className="w-full p-4">
       <div className="relative mx-auto w-[120px] h-[120px]">
         <Image
-          src={user.profilePicture}
+          src={getImageSrc(user.profilePicture)}
           alt={user.name + "'s profile picture"}
           width={120}
           height={120}

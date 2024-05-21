@@ -1,6 +1,7 @@
 import LevelBadge from "@/app/components/common/LevelBadge";
 import LevelGauge from "@/app/components/common/LevelGauge";
 import User from "@/lib/user";
+import getImageSrc from "@/lib/utils/getImageSrc";
 import Image from "next/image";
 import React from "react";
 
@@ -13,7 +14,7 @@ export default function Header({ user }: Props) {
     <>
       <div className="w-full flex flex-row items-center justify-center p-4 gap-4">
         <Image
-          src={user.profilePicture}
+          src={getImageSrc(user.profilePicture)}
           alt={user.name + "'s profile picture"}
           width={120}
           height={120}
