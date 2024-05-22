@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import BottomNavbar from "./bravery/components/BottomNavbar";
-import TopHeader from "./bravery/components/TopHeader";
+import BottomNavbar from "./braveness/components/BottomNavbar";
+import TopHeader from "./braveness/components/TopHeader";
 
 export const metadata: Metadata = {
   title: "Bravery",

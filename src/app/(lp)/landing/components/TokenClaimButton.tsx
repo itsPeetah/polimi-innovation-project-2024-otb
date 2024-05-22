@@ -10,7 +10,7 @@ export default function TokenClaimButton() {
     <div className="sticky bottom-0 w-full | flex flex-row | p-4">
       {tokenClaimed ? (
         <Link
-          href="/bravery/collection"
+          href="/braveness/collection"
           className="inline-block w-full | py-4 px-2 | text-center text-xl bg-zinc-300 text-black uppercase font-bold rounded-xl shadow-xl"
         >
           Browse your collection

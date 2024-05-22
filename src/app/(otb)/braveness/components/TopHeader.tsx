@@ -18,15 +18,15 @@ function useTitle() {
   const pathname = usePathname();
 
   switch (pathname) {
-    case "/bravery/me":
+    case "/braveness/me":
       return "My Profile";
-    case "/bravery/leaderboard":
+    case "/braveness/leaderboard":
       return "Hall of Braves";
-    case "/bravery/marketplace":
-      return "OTB Marketplace";
-    case "/bravery/collection":
-      return "Collection";
+    case "/braveness/marketplace":
+      return "Pre-Loved";
+    case "/braveness/collection":
+      return "My Wardrobe";
     default:
-      return "Welcome home";
+      return "OTB Braveness";
   }
 }
