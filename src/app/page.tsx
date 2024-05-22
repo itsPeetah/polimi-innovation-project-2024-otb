@@ -19,7 +19,7 @@ export default function Home() {
         </h2>
         <h2 className="text-xl">Innovation Project (OTB)</h2>
       </div>
-      <div className="fixed -right-10 -bottom-16 | w-80 h-80 | flex flex-col px-4 justify-center gap-4 | bg-white rounded-full text-black">
+      <div className=" fixed sm:absolute -right-10 -bottom-16 | w-80 h-80 | flex flex-col px-4 justify-center gap-4 | bg-white rounded-full text-black">
         <h3 className="font-bold text-2xl mx-5" style={{ ...playFair.style }}>
           Links
         </h3>
