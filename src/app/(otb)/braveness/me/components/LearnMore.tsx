@@ -6,7 +6,7 @@ export default function LearnMore() {
   return (
     <div className="w-full p-4">
       <h2 className="font-bold uppercase text-sm text-zinc-500 mb-4">
-        Learn more about out Blockchain
+        Learn more about our Blockchain
       </h2>
       <div className="flex flex-col gap-4">
         <InfoButton text="OTB: On The Blockchain" />

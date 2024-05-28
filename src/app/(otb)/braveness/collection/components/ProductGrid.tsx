@@ -17,7 +17,7 @@ export default function ProductGrid({ products }: Props) {
       })}
       <div className="flex flex-col items-center justify-center p-4 text-center text-zinc-300 border-2 border-zinc-300 rounded-2xl">
         <PlusCircleIcon strokeWidth={2} className="w-8 h-8" />
-        <p>Shop your favorite brands</p>
+        <p>Add a new item</p>
       </div>
     </div>
   );
